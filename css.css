@@ -1,0 +1,39 @@
+
+body{
+    background-color: rgb(223, 221, 217);
+}
+.container{
+    /* width: 80%; */
+    /* margin: 10px 50px; */
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    width: 70%;
+    box-shadow: 10px 10px 5px 12px #706c6c;
+    padding: 35px;
+    background-color:  antiquewhite;
+}
+
+.titleContainar{
+    position: relative;
+    text-align: center;
+    color: black;
+   
+    /* animation-fill-mode: forwards; */
+}
+
+.centered {
+    position: absolute;
+    top: 52%; 
+    animation: mymove 3s;
+    text-shadow: 2px 2px 4px #706c6c;
+}
+
+  @keyframes mymove {
+    from {left: -600px;}
+    to {left: 10px;}
+  }
