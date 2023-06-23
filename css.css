@@ -3,8 +3,6 @@ body{
     background-color: rgb(223, 221, 217);
 }
 .container{
-    /* width: 80%; */
-    /* margin: 10px 50px; */
     font-size: large;
     display: flex;
     justify-content: center;
@@ -36,4 +34,28 @@ body{
   @keyframes mymove {
     from {left: -600px;}
     to {left: 10px;}
+  }
+
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+   .img{
+    width: 90%;
+    height: 80%;
+   }
+
+   .centered {
+    position: absolute;
+    top: 97%; 
+    left: 15%;
+    animation: mymove 3s;
+    text-shadow: 2px 2px 4px #706c6c;
+    }
+    .titleContainar{
+        margin-bottom: 20%;
+    }
+
+    @keyframes mymove {
+        from {left: -600px;}
+        to {left: 55px;}
+      }
   }
